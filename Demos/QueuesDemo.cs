@@ -1,0 +1,83 @@
+using System;
+using data_structures_demo.Modules;
+
+namespace data_structures_demo.Demos {
+    class QueuesDemo {
+        public static void runDemo() {
+            bool running = true;
+			Queue q = new Queue(5);
+			while (running) {
+				Console.Clear();
+				Console.WriteLine("Queue Menu\n----------------------");
+				Console.Write("1 - Enqueue\n2 - Dequeue\n3 - Show size\n4 - Show queue\n\n0 - Exit\n----------------------\nChoice: ");
+				int choice = intInput();
+				switch (choice) {
+					case 1:
+						if (q.isFull()) {
+							Console.WriteLine("Queue full!");
+							waitForEnter();
+							break;
+						}
+						Console.Write("Enter item to queue: ");
+						string itemToQueue = stringInput();
+						q.enQueue(itemToQueue);
+						Console.WriteLine($"\"{itemToQueue}\" enqueued");
+						waitForEnter();
+						break;
+					case 2:
+						if (q.isEmpty()) {
+							Console.WriteLine("Queue is already empty!");
+							waitForEnter();
+							break;
+						}
+						Console.WriteLine($"\"{q.raw()[0]}\" dequeued");
+						q.deQueue();
+						waitForEnter();
+						break;
+					case 3:
+						Console.WriteLine($"\nQueue size: {q.size()}\nMax size: {q.maxQueueSize()}");
+						waitForEnter();
+						break;
+					case 4:
+						q.show();
+						waitForEnter();
+						break;
+					case 0:
+						running = false;
+						return;
+				}
+			}
+        }
+
+        static void waitForEnter() {
+			Console.WriteLine("Press ENTER to continue");
+			Console.ReadLine();
+		}
+
+		static string stringInput() {
+			string output = null;
+			while (output == null) {
+				try { output = Console.ReadLine(); }
+				catch {
+					Console.WriteLine("Not a valid string!");
+					output = null;
+				}
+			}
+
+			return output;
+		}
+
+		static int intInput() {
+			int output = -1;
+			while (output == -1) {
+				try { output = int.Parse(Console.ReadLine()); }
+				catch {
+					Console.Write("Not a valid choice!\nTry again: ");
+					output = -1;
+				}
+			}
+
+			return output;
+		}
+    }
+}

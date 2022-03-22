@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BhnNC31Jw4SowwJLOljttWBkqNwsyYAccYkn61bUxRgK3LWGnnqQJWzZ5zo8vLMCOq4RiLEEbZE9m7ggzf+buw==",
+  "success": true,
+  "projectFilePath": "/home/floppydisk/Documents/Projects/data-structures-demo/data-structures-demo.csproj",
+  "expectedPackageFiles": [
+    "/home/floppydisk/.nuget/packages/microsoft.netcore.app.host.linux-x64/5.0.14/microsoft.netcore.app.host.linux-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

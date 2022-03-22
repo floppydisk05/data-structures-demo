@@ -1,0 +1,16 @@
+/home/floppydisk/Documents/Projects/data-structures-demo/bin/Debug/net5.0/data-structures-demo
+/home/floppydisk/Documents/Projects/data-structures-demo/bin/Debug/net5.0/data-structures-demo.deps.json
+/home/floppydisk/Documents/Projects/data-structures-demo/bin/Debug/net5.0/data-structures-demo.runtimeconfig.json
+/home/floppydisk/Documents/Projects/data-structures-demo/bin/Debug/net5.0/data-structures-demo.runtimeconfig.dev.json
+/home/floppydisk/Documents/Projects/data-structures-demo/bin/Debug/net5.0/data-structures-demo.dll
+/home/floppydisk/Documents/Projects/data-structures-demo/bin/Debug/net5.0/ref/data-structures-demo.dll
+/home/floppydisk/Documents/Projects/data-structures-demo/bin/Debug/net5.0/data-structures-demo.pdb
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/data-structures-demo.csproj.AssemblyReference.cache
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/data-structures-demo.GeneratedMSBuildEditorConfig.editorconfig
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/data-structures-demo.AssemblyInfoInputs.cache
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/data-structures-demo.AssemblyInfo.cs
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/data-structures-demo.csproj.CoreCompileInputs.cache
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/data-structures-demo.dll
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/ref/data-structures-demo.dll
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/data-structures-demo.pdb
+/home/floppydisk/Documents/Projects/data-structures-demo/obj/Debug/net5.0/data-structures-demo.genruntimeconfig.cache
