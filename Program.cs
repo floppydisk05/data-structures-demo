@@ -8,8 +8,7 @@ namespace data_structures_demo
 	{
 		static void Main(string[] args)
 		{
-			string[] mainMenuItems = {"Queues"};
-			Menu mainMenu = new Menu("Main Menu", mainMenuItems);
+			Menu mainMenu = new Menu("Main Menu", new string[] {"Queues"});
 			while (true) {
 				Console.Clear();
 				mainMenu.show();
