@@ -3,7 +3,7 @@ using data_structures_demo.Modules;
 
 namespace data_structures_demo.Demos {
 	class QueuesDemo {
-		public static void runDemo() {
+		public static void run() {
 			int queueSize = -1;
 			
 			while (queueSize < 2 || queueSize > 20) {
