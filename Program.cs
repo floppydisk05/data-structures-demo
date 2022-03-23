@@ -15,7 +15,7 @@ namespace data_structures_demo
 				mainMenu.show();
 				switch (mainMenu.getInput()) {
 					case 1:
-						QueuesDemo.runDemo();
+						QueuesDemo.run();
 						break;
 					case 0:
 						Console.Clear();
