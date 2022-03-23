@@ -13,8 +13,7 @@ namespace data_structures_demo
 			while (true) {
 				Console.Clear();
 				mainMenu.show();
-				int choice = mainMenu.getInput();
-				switch (choice) {
+				switch (mainMenu.getInput()) {
 					case 1:
 						QueuesDemo.runDemo();
 						break;
