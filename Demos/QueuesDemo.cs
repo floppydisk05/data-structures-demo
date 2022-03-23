@@ -4,8 +4,20 @@ using data_structures_demo.Modules;
 namespace data_structures_demo.Demos {
 	class QueuesDemo {
 		public static void runDemo() {
+			int queueSize = -1;
+			
+			while (queueSize < 2 || queueSize > 20) {
+				Console.Write("Enter queue size: ");
+				try {
+					queueSize = Int32.Parse(Console.ReadLine());
+				} catch (Exception) {
+					Console.WriteLine("Invalid queue size!");
+				}
+				if (queueSize < 2 || queueSize > 20)
+					Console.WriteLine("Queue size must be in range 2 - 20!");
+			}
 			bool running = true;
-			Queue q = new Queue(5);
+			Queue q = new Queue(queueSize);
 			while (running) {
 				Console.Clear();
 				string[] queueMenuOptions = {"Enqueue", "Dequeue", "Show size", "Show Queue"};
