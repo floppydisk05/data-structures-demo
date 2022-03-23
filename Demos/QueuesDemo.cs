@@ -2,16 +2,16 @@ using System;
 using data_structures_demo.Modules;
 
 namespace data_structures_demo.Demos {
-    class QueuesDemo {
-        public static void runDemo() {
-            bool running = true;
+	class QueuesDemo {
+		public static void runDemo() {
+			bool running = true;
 			Queue q = new Queue(5);
 			while (running) {
 				Console.Clear();
-				Console.WriteLine("Queue Menu\n----------------------");
-				Console.Write("1 - Enqueue\n2 - Dequeue\n3 - Show size\n4 - Show queue\n\n0 - Exit\n----------------------\nChoice: ");
-				int choice = intInput();
-				switch (choice) {
+				string[] queueMenuOptions = {"Enqueue", "Dequeue", "Show size", "Show Queue"};
+				Menu queueMenu = new Menu("Queues Demo", queueMenuOptions);
+				queueMenu.show();
+				switch (queueMenu.getInput()) {
 					case 1:
 						if (q.isFull()) {
 							Console.WriteLine("Queue full!");
@@ -47,9 +47,9 @@ namespace data_structures_demo.Demos {
 						return;
 				}
 			}
-        }
+		}
 
-        static void waitForEnter() {
+		static void waitForEnter() {
 			Console.WriteLine("Press ENTER to continue");
 			Console.ReadLine();
 		}
@@ -79,5 +79,5 @@ namespace data_structures_demo.Demos {
 
 			return output;
 		}
-    }
+	}
 }
