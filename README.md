@@ -3,6 +3,7 @@ A-Level Year 1 Summer Project
 
 Demonstrates the following types of data structures
 - Queues
+- Stacks
 
 ## Build instructions
 Clone the repository
