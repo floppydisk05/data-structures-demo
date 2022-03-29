@@ -8,13 +8,16 @@ namespace data_structures_demo
 	{
 		static void Main(string[] args)
 		{
-			Menu mainMenu = new Menu("Main Menu", new string[] {"Queues"});
+			Menu mainMenu = new Menu("Main Menu", new string[] {"Queues", "Stacks"}, "Exit");
 			while (true) {
 				Console.Clear();
 				mainMenu.show();
 				switch (mainMenu.getInput()) {
 					case 1:
 						QueuesDemo.run();
+						break;
+					case 2:
+						StacksDemo.run();
 						break;
 					case 0:
 						Console.Clear();
