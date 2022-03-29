@@ -3,10 +3,12 @@ using System;
 class Menu {
     private string title;
     private string[] items;
+    private string backText;
 
-    public Menu(string title, string[] items) {
+    public Menu(string title, string[] items, string backText) {
         this.items = items;
         this.title = title;
+        this.backText = backText;
     }
 
     public void show() {
@@ -16,7 +18,7 @@ class Menu {
             Console.WriteLine($"{i} - {item}");
             i++;
         }
-        Console.WriteLine("\n0 - Exit\n--------------------------------");
+        Console.WriteLine($"\n0 - {this.backText}\n--------------------------------");
     }
 
     public int getInput() {
