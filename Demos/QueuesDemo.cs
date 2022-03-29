@@ -7,21 +7,23 @@ namespace data_structures_demo.Demos {
 			int queueSize = -1;
 			
 			while (queueSize < 2 || queueSize > 20) {
-				Console.Write("Enter queue size: ");
+				Console.Write("Enter queue size or 0 for predefined data: ");
 				try {
 					queueSize = Int32.Parse(Console.ReadLine());
 				} catch (Exception) {
 					Console.WriteLine("Invalid queue size!");
 				}
-				if (queueSize < 2 || queueSize > 20)
+				if (queueSize == 0) break;
+				else if (queueSize < 2 || queueSize > 20)
 					Console.WriteLine("Queue size must be in range 2 - 20!");
 			}
 			bool running = true;
-			Queue q = new Queue(queueSize);
+			Queue q;
+			if (queueSize == 0) q = new Queue(15, new string[] {"This", "is", "a", "test", "queue"});
+			else q = new Queue(queueSize);
 			while (running) {
 				Console.Clear();
-				string[] queueMenuOptions = {"Enqueue", "Dequeue", "Show size", "Show Queue"};
-				Menu queueMenu = new Menu("Queues Demo", queueMenuOptions);
+				Menu queueMenu = new Menu("Queues Demo", new string[] {"Enqueue", "Dequeue", "Show size", "Show Queue"}, "Back");
 				queueMenu.show();
 				switch (queueMenu.getInput()) {
 					case 1:
