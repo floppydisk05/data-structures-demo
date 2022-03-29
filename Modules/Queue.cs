@@ -1,4 +1,5 @@
 using System;
+using data_structures_demo.Modules;
 
 namespace data_structures_demo.Modules {
     class Queue {
@@ -14,6 +15,16 @@ namespace data_structures_demo.Modules {
             this.priorities = new int[maxSize];
             //this.front = 0;
             this.rear = -1;
+        }
+
+        public Queue(int maxSize, string[] items) {
+            this.maxSize = maxSize;
+            this.queue = new string[maxSize];
+            this.priorities = new int[maxSize];
+            this.rear = -1;
+            for (int i = 0; i < items.Length; i++) {
+                queue[i] = items[i];
+            }
         }
 
         public int size() {
@@ -64,7 +75,7 @@ namespace data_structures_demo.Modules {
         public void enQueue(string newItem) {
             if (isFull()) {
                 Console.WriteLine("Queue full");
-                waitForEnter();
+                Util.waitForEnter();
             }
             else {
                 rear = (rear + 1) % maxSize;
@@ -75,7 +86,7 @@ namespace data_structures_demo.Modules {
         public void deQueue() {
             if (isEmpty()) {
                 Console.WriteLine("Queue empty");
-                waitForEnter();
+                Util.waitForEnter();
             }
             else {
                 for (int i = 0; i < queue.Length - 1; i++) {
@@ -104,11 +115,6 @@ namespace data_structures_demo.Modules {
 
         public string[] raw() {
             return queue;
-        }
-
-        static void waitForEnter() {
-            Console.WriteLine("Press ENTER to continue");
-            Console.ReadLine();
         }
     }
 }
