@@ -3,7 +3,7 @@ A demonstration of different types of data structure
 
 ### Demos
 - [X] Queues
-- [ ] Lists
+- [X] Lists
 - [X] Stacks
 - [ ] Hash Tables
 - [ ] Dictionaries
