@@ -5,7 +5,10 @@ using data_structures_demo.Modules;
 namespace data_structures_demo.Demos {
 	class StacksDemo {
 		public static void run() {
+			string size = Util.getInput("Enter 0 for predefined data or anything else for blank: ");
 			Stack<string> stack = new Stack<string>();
+			if (size == "0") stack = new Stack<String>(new string[] {"This", "is", "a", "test", "stack"});
+
 			bool running = true;
 			while (running) {
 				Console.Clear();
@@ -34,7 +37,7 @@ namespace data_structures_demo.Demos {
 							foreach (string stackItem in stack) {
 								items += $"{stackItem}, ";
 							}
-							Console.WriteLine($"Stack: {items.Substring(0, items.Length - 3)}");
+							Console.WriteLine($"Stack: {items.Substring(0, items.Length - 2)}");
 						} else {
 							Console.WriteLine("Stack is empty");
 						}
