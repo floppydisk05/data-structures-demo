@@ -1,4 +1,9 @@
-﻿using System;
+﻿// Data Structures Demonstation by Frankie (floppydisk05)
+// A demonstration of stacks, queues, lists and more!
+// Created:		22 March 2022
+// Modified:	01 April 2022
+
+using System;
 
 using data_structures_demo.Demos;
 using data_structures_demo.Modules;
