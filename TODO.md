@@ -17,4 +17,4 @@ A demonstration of different types of data structure
 
 ### Other Tasks
 - [X] Implement reusable menu system
-- [ ] Allow for user to input their own data (🌟 Extra credit)
+- [X] Allow for user to input their own data (🌟 Extra credit)
