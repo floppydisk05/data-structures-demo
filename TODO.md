@@ -9,7 +9,7 @@ A demonstration of different types of data structure
 - [X] Queues
 - [X] Lists
 - [X] Stacks
-- [ ] Hash Tables
+- [X] Hash Tables
 - [ ] Dictionaries
 - [ ] Graphs
 - [ ] Trees

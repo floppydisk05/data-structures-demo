@@ -14,7 +14,7 @@ namespace data_structures_demo
 	{
 		static void Main(string[] args)
 		{
-			Menu mainMenu = new Menu("Main Menu", new string[] {"Queues", "Lists", "Stacks"}, "Exit");
+			Menu mainMenu = new Menu("Main Menu", new string[] {"Queues", "Lists", "Stacks", "Hashtables"}, "Exit");
 			while (true) {
 				Console.Clear();
 				mainMenu.show();
@@ -28,11 +28,13 @@ namespace data_structures_demo
 					case 3:
 						StacksDemo.run();
 						break;
+					case 4:
+						HashtablesDemo.run();
+						break;
 					case 0:
 						Console.Clear();
 						Console.WriteLine("Exiting...");
-						// Exits with code 0
-						Environment.Exit(0);
+						Environment.Exit(0); // Exits with code 0
 						break;
 				}
 			}
