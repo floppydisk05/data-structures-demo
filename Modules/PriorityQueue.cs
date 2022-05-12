@@ -5,14 +5,14 @@ namespace data_structures_demo.Modules {
 		private string[] queue;
 		private int[] priorities;
 		private int maxSize;
-		private int front;
+		//private int front;
 		private int rear;
 
 		public PriorityQueue(int maxSize) {
 			this.maxSize = maxSize;
 			this.queue = new string[maxSize];
 			this.priorities = new int[maxSize];
-			this.front = 0;
+			//this.front = 0;
 			this.rear = -1;
 		}
 
