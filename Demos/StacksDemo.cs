@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+
 using data_structures_demo.Modules;
 
 namespace data_structures_demo.Demos {
@@ -18,12 +19,12 @@ namespace data_structures_demo.Demos {
 					case 1:
 						string item = Util.getInput("Enter string to push: ");
 						stack.Push(item);
-						Console.WriteLine($"Pushed {item} to stack");
+						Console.WriteLine($"Pushed \"{item}\" to stack");
 						Util.waitForEnter();
 						break;
 					case 2:
 						string poppedItem = stack.Pop();
-						Console.WriteLine($"Popped {poppedItem} from the stack");
+						Console.WriteLine($"Popped \"{poppedItem}\" from the stack");
 						Util.waitForEnter();
 						break;
 					case 3:
