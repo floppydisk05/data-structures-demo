@@ -5,6 +5,7 @@ Demonstrates the following types of data structures
 - Queues
 - Lists
 - Stacks
+- Hashtables
 
 ## Build instructions
 Clone the repository
