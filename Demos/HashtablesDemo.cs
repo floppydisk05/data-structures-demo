@@ -28,7 +28,7 @@ namespace data_structures_demo.Demos {
 
 			while (running) {
 				Console.Clear();
-				Menu htMenu = new Menu("Hashtables Demo", new string[] {"Add element", "Remove by key", "Clear hashtable", "Search for key", "Search for value", "Show hashtable", "Show total pairs"}, "Back");
+				Menu htMenu = new Menu("Hashtables Demo", new string[] {"Add element", "Remove by key", "Clear hashtable", "Search for key", "Search for value", "Show hashtable", "Show total pairs"});
 				htMenu.show();
                 bool valid = false;
 				switch (htMenu.getInput()) {

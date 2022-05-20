@@ -23,7 +23,7 @@ namespace data_structures_demo.Demos {
 			else q = new Queue(queueSize);
 			while (running) {
 				Console.Clear();
-				Menu queueMenu = new Menu("Queues Demo", new string[] {"Enqueue", "Dequeue", "Show size", "Show Queue"}, "Back");
+				Menu queueMenu = new Menu("Queues Demo", new string[] {"Enqueue", "Dequeue", "Show size", "Show Queue"});
 				queueMenu.show();
 				switch (queueMenu.getInput()) {
 					case 1:

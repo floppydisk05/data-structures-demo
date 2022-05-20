@@ -13,7 +13,7 @@ namespace data_structures_demo.Demos {
 			bool running = true;
 			while (running) {
 				Console.Clear();
-				Menu stackMenu = new Menu("Stacks Demo", new string[] {"Push to stack", "Pop from stack", "Clear stack", "Show stack", "Show size"}, "Back");
+				Menu stackMenu = new Menu("Stacks Demo", new string[] {"Push to stack", "Pop from stack", "Clear stack", "Show stack", "Show size"});
 				stackMenu.show();
 				switch (stackMenu.getInput()) {
 					case 1:

@@ -11,6 +11,12 @@ namespace data_structures_demo.Modules{
 			this.title = title;
 			this.backText = backText;
 		}
+		
+		public Menu(string title, string[] items) {
+			this.items = items;
+			this.title = title;
+			this.backText = "Back";
+		}
 	
 		public void show() {
 			Console.WriteLine($"{title}\n--------------------------------");

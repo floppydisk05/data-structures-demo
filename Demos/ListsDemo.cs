@@ -23,7 +23,7 @@ namespace data_structures_demo.Demos {
 
 			while (running) {
 				Console.Clear();
-				Menu listMenu = new Menu("Lists Demo", new string[] {"Add element", "Add by index", "Remove element", "Remove by index", "Check elements", "Show list"}, "Back");
+				Menu listMenu = new Menu("Lists Demo", new string[] {"Add element", "Add by index", "Remove element", "Remove by index", "Check elements", "Show list"});
 				listMenu.show();
 				string item;
 				int idx;
