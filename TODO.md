@@ -2,7 +2,7 @@
 A demonstration of different types of data structure
 
 ### To-Do
-- [ ] Make queue c i r c u l a r
+- [ ] Circular queue
 - [ ] Priority queue
 
 ### Demos
@@ -17,4 +17,4 @@ A demonstration of different types of data structure
 
 ### Other Tasks
 - [X] Implement reusable menu system
-- [X] Allow for user to input their own data (🌟 Extra credit)
+- [ ] Allow for user to input their own data (🌟 Extra credit)
