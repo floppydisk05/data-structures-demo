@@ -1,7 +1,7 @@
 # Data Structures Demonstration
 A-Level Year 1 Summer Project
 
-Demonstrates the following types of data structures
+Demonstrates the following types of data structures...
 - Queues
 - Lists
 - Stacks
