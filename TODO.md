@@ -10,7 +10,7 @@ A demonstration of different types of data structure
 - [X] Lists
 - [X] Stacks
 - [X] Hash Tables
-- [ ] Dictionaries
+- [X] Dictionaries
 - [ ] Graphs
 - [ ] Trees
 - [ ] Vectors
