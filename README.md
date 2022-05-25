@@ -6,6 +6,7 @@ Demonstrates the following types of data structures
 - Lists
 - Stacks
 - Hashtables
+- Dictionaries
 
 ## Build instructions
 Clone the repository
