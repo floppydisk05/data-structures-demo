@@ -6,7 +6,7 @@ A demonstration of different types of data structure
 - [ ] Priority queue
 
 ### Demos
-- [X] Queues
+- [X] Queues (see to-do)
 - [X] Lists
 - [X] Stacks
 - [X] Hash Tables
