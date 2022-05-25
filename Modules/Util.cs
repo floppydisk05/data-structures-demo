@@ -11,5 +11,10 @@ namespace data_structures_demo.Modules {
 			Console.WriteLine("Press ENTER to continue");
 			Console.ReadLine();
 		}
+
+		public static void waitForEnter(string message) {
+			Console.WriteLine($"{message}\nPress ENTER to continue");
+			Console.ReadLine();
+		}
 	}
 }
