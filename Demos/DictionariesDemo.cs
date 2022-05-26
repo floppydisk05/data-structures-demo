@@ -1,12 +1,12 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+
 using data_structures_demo.Modules;
 
 namespace data_structures_demo.Demos {
 	class DictionariesDemo {
 		public static void run() {
-			/*int size = -1;
+			int size = -1;
 			while (size < 0 || size > 20) {
 				try {
 					size = Int32.Parse(Util.getInput("Enter list size or 0 for predefined data: "));
@@ -16,11 +16,20 @@ namespace data_structures_demo.Demos {
 					if (size > 20 || size < 0) Console.WriteLine("Must be between 0 and 20!");
 				}
 			}
-            int size = 0;*/
+
+            Dictionary<string, string> dict;
+
+            if (size == 0) {
+                dict = new Dictionary<string, string>(){
+                    {"key", "value"},
+                    {"this", "is"},
+                    {"an", "example"}
+                };
+            } else {
+                dict = new Dictionary<string, string>();
+            }
 			
 			bool running = true;
-			
-            Dictionary<string, string> dict = new Dictionary<string, string>();
 
 			while (running) {
 				Console.Clear();
@@ -83,7 +92,7 @@ namespace data_structures_demo.Demos {
                             Console.WriteLine("Dictionary is empty!");
                             break;
                         }
-                        Console.WriteLine("{");
+                        Console.WriteLine("\n{");
                         foreach (KeyValuePair<string, string> pair in dict) {
                             Console.WriteLine($"\t\"{pair.Key}\": \"{pair.Value}\"");
                         }

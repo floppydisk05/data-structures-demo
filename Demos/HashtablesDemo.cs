@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
+
 using data_structures_demo.Modules;
 
 namespace data_structures_demo.Demos {
 	class HashtablesDemo {
 		public static void run() {
-			/*int size = -1;
+			int size = -1;
 			while (size < 0 || size > 20) {
 				try {
 					size = Int32.Parse(Util.getInput("Enter list size or 0 for predefined data: "));
@@ -15,15 +15,18 @@ namespace data_structures_demo.Demos {
 				} finally {
 					if (size > 20 || size < 0) Console.WriteLine("Must be between 0 and 20!");
 				}
-			}*/
-            int size = 0;
+			}
 			
 			bool running = true;
-			Hashtable ht = new Hashtable();
+			Hashtable ht;
 			if (size == 0) {
-                ht.Add("x", "20");
-                ht.Add("y", "4");
-                ht.Add("z", "15");
+                ht = new Hashtable(){
+                    {"x", "20"},
+                    {"y", "4"},
+                {   "z", "15"}
+                };
+            } else {
+                ht = new Hashtable();
             }
 
 			while (running) {
@@ -77,10 +80,11 @@ namespace data_structures_demo.Demos {
                         break;
                     case 6:
                         ICollection keys = ht.Keys;
+                        Console.WriteLine("{");
                         foreach (string k in keys) {
-                            Console.WriteLine($"{k}: {ht[k]}");
+                            Console.WriteLine($"\t{k}: {ht[k]}");
                         }
-                        Util.waitForEnter();
+                        Util.waitForEnter("}");
                         break;
                     case 7:
                         Console.WriteLine($"Hashtable size: {ht.Count}");
