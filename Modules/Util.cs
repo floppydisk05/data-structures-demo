@@ -1,6 +1,6 @@
 using System;
 
-namespace data_structures_demo.Modules {
+namespace DataStructuresDemo.Modules {
 	class Util {
 		public static string getInput(string prompt) {
 			Console.Write(prompt);

@@ -1,9 +1,9 @@
 using System;
 using System.Collections;
 
-using data_structures_demo.Modules;
+using DataStructuresDemo.Modules;
 
-namespace data_structures_demo.Demos {
+namespace DataStructuresDemo.Demos {
 	class HashtablesDemo {
 		public static void run() {
 			int size = -1;

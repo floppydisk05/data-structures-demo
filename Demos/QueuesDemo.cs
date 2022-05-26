@@ -1,8 +1,8 @@
 using System;
 
-using data_structures_demo.Modules;
+using DataStructuresDemo.Modules;
 
-namespace data_structures_demo.Demos {
+namespace DataStructuresDemo.Demos {
 	class QueuesDemo {
 		public static void run() {
 			int queueSize = -1;

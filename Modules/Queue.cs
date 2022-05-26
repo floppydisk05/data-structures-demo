@@ -1,6 +1,6 @@
 using System;
 
-namespace data_structures_demo.Modules {
+namespace DataStructuresDemo.Modules {
 	class Queue {
 		private string[] queue;
 		private int[] priorities;

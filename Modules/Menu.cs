@@ -1,6 +1,6 @@
 using System;
 
-namespace data_structures_demo.Modules{
+namespace DataStructuresDemo.Modules{
 	class Menu {
 		private string title;
 		private string[] items;

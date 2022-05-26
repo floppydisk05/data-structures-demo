@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-using data_structures_demo.Modules;
+using DataStructuresDemo.Modules;
 
-namespace data_structures_demo.Demos {
+namespace DataStructuresDemo.Demos {
 	class StacksDemo {
 		public static void run() {
 			string size = Util.getInput("Enter 0 for predefined data or anything else for blank: ");

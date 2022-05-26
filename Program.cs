@@ -5,10 +5,10 @@
 
 using System;
 
-using data_structures_demo.Demos;
-using data_structures_demo.Modules;
+using DataStructuresDemo.Demos;
+using DataStructuresDemo.Modules;
 
-namespace data_structures_demo
+namespace DataStructuresDemo
 {
 	class Program
 	{
