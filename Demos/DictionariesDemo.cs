@@ -6,20 +6,18 @@ using DataStructuresDemo.Modules;
 namespace DataStructuresDemo.Demos {
 	class DictionariesDemo {
 		public static void run() {
-			int size = -1;
-			while (size < 0 || size > 20) {
+			string size = "x";
+			while (size != "" && size != "0") {
 				try {
-					size = Int32.Parse(Util.getInput("Enter list size or 0 for predefined data: "));
+					size = Util.getInput("Enter 0 for predefined data or nothing for empty: ");
 				} catch (Exception) {
-					Console.WriteLine("Must be a valid integer!");
-				} finally {
-					if (size > 20 || size < 0) Console.WriteLine("Must be between 0 and 20!");
+					Console.WriteLine("Must be empty or 0!");
 				}
 			}
 
             Dictionary<string, string> dict;
 
-            if (size == 0) {
+            if (size == "0") {
                 dict = new Dictionary<string, string>(){
                     {"key", "value"},
                     {"this", "is"},
@@ -90,6 +88,7 @@ namespace DataStructuresDemo.Demos {
                     case 6:
                         if (dict.Count == 0) {
                             Console.WriteLine("Dictionary is empty!");
+                            Util.waitForEnter();
                             break;
                         }
                         Console.WriteLine("\n{");

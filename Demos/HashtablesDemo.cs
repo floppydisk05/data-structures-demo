@@ -6,20 +6,18 @@ using DataStructuresDemo.Modules;
 namespace DataStructuresDemo.Demos {
 	class HashtablesDemo {
 		public static void run() {
-			int size = -1;
-			while (size < 0 || size > 20) {
+			string size = "x";
+			while (size != "" && size != "0") {
 				try {
-					size = Int32.Parse(Util.getInput("Enter list size or 0 for predefined data: "));
+					size = Util.getInput("Enter 0 for predefined data or nothing for empty: ");
 				} catch (Exception) {
-					Console.WriteLine("Must be a valid integer!");
-				} finally {
-					if (size > 20 || size < 0) Console.WriteLine("Must be between 0 and 20!");
+					Console.WriteLine("Must be empty or 0!");
 				}
 			}
 			
 			bool running = true;
 			Hashtable ht;
-			if (size == 0) {
+			if (size == "0") {
                 ht = new Hashtable(){
                     {"x", "20"},
                     {"y", "4"},
