@@ -1,7 +1,8 @@
-﻿// Data Structures Demonstation by Frankie (floppydisk05)
-// A demonstration of stacks, queues, lists and more!
-// Created:		22 March 2022
-// Modified:	01 April 2022
+﻿//@Project:	Data Structures Demonstration
+//@Author:	Frankie B. (floppydisk05)
+//@Contact:	floppydisk05@aol.com
+//@Created:	09:34 AM Tuesday, March 22, 2022
+//@Updated:	10:09 PM Tuesday, June 28, 2022
 
 using System;
 
